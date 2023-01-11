@@ -1,26 +1,27 @@
-package SWEA;
+package codeUp;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class SWEA_2063_중간값찾기 {
+public class CodeUp_1172_세수정렬 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		Scanner scanner = new Scanner(System.in);
-		
-		int N = scanner.nextInt();
-		int[] arr = new int[N];
-		
-		for (int i = 0; i < N; i++) {
+
+		int[] arr = new int[3];
+
+		for (int i = 0; i < arr.length; i++) {
 			arr[i] = scanner.nextInt();
 		}
-		
+
 		Arrays.sort(arr);
-		
-		System.out.println(arr[N / 2]);
 
-	} // end of main
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
 
-} // end of class
+	}
+
+}
